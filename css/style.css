@@ -717,6 +717,30 @@
             letter-spacing: 0.4px;
         }
 
+        .hero-designation-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            padding: 5px 14px;
+            background: rgba(30, 63, 32, 0.08);
+            border: 1px solid rgba(46, 125, 50, 0.32);
+            border-radius: 20px;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: #1e3f20;
+            letter-spacing: 0.3px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            font-family: 'Uniform Medium', 'Roboto', sans-serif;
+            transition: all 0.25s ease;
+        }
+
+        .hero-designation-badge:hover {
+            background: rgba(46, 125, 50, 0.14);
+            border-color: rgba(46, 125, 50, 0.5);
+            transform: translateY(-1px);
+        }
+
 
 
         .lower {
@@ -1720,13 +1744,13 @@
 
         .footer-menu .footer-menu-link:hover .footer-menu-icon,
         .footer-menu .footer-menu-link:active .footer-menu-icon {
-            color: #C6982B;
+            color: #27ae60;
             transform: scale(1.1);
         }
 
         .footer-menu .footer-menu-link:hover .footer-menu-text,
         .footer-menu .footer-menu-link:active .footer-menu-text {
-            color: #9E741D;
+            color: #1e5a27;
         }
 
         /* Active Navigation Tab Highlighting */
@@ -1735,13 +1759,13 @@
         }
 
         .footer-menu .footer-menu-link.active .footer-menu-icon {
-            color: #C6982B !important;
+            color: #27ae60 !important;
             transform: scale(1.18);
-            filter: drop-shadow(0 2px 6px rgba(198, 152, 43, 0.45));
+            filter: drop-shadow(0 2px 6px rgba(39, 174, 96, 0.55));
         }
 
         .footer-menu .footer-menu-link.active .footer-menu-text {
-            color: #1e3f20 !important;
+            color: #1e5a27 !important;
             font-weight: 700;
         }
 
@@ -1751,11 +1775,11 @@
             bottom: 2px;
             left: 50%;
             transform: translateX(-50%);
-            width: 18px;
+            width: 20px;
             height: 3px;
-            background: linear-gradient(90deg, #9E741D, #2E7D32, #9E741D);
+            background: linear-gradient(90deg, #1e5a27, #2ecc71, #1e5a27);
             border-radius: 3px;
-            box-shadow: 0 1px 4px rgba(46, 125, 50, 0.4);
+            box-shadow: 0 1px 6px rgba(46, 204, 113, 0.6);
         }
 
         /* Footer Menu CSS Completed */
