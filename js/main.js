@@ -50,8 +50,6 @@ const modalImg = document.getElementById('img01');
 const captionText = document.getElementById('caption');
 const imageModalClose = document.getElementById('imageModalClose');
 const shareModalClose = document.getElementById('shareModalClose');
-const settingsModal = document.getElementById('settingsModal');
-const settingsModalClose = document.getElementById('settingsModalClose');
 
 window.addEventListener('click', function (event) {
     if (event.target === imageModal && imageModal) {
@@ -59,9 +57,6 @@ window.addEventListener('click', function (event) {
     }
     if (event.target === shareModal && shareModal) {
         shareModal.style.display = 'none';
-    }
-    if (event.target === settingsModal && settingsModal) {
-        settingsModal.style.display = 'none';
     }
 });
 
@@ -98,24 +93,6 @@ if (shareModalClose) {
     shareModalClose.onclick = function () {
         if (shareModal) shareModal.style.display = 'none';
     };
-}
-
-function openSettingsModal() {
-    const modal = document.getElementById('settingsModal');
-    if (modal) {
-        modal.style.display = 'flex';
-    }
-}
-
-function closeSettingsModal() {
-    const modal = document.getElementById('settingsModal');
-    if (modal) {
-        modal.style.display = 'none';
-    }
-}
-
-if (settingsModalClose) {
-    settingsModalClose.onclick = closeSettingsModal;
 }
 
 // ==========================================

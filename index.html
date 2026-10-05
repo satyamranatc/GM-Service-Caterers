@@ -138,9 +138,6 @@
         <div class="corner"></div>
         <!-- Card Top Action Controls -->
         <div class="card-top-controls">
-            <button type="button" onclick="openSettingsModal()" class="top-icon-btn" title="Settings &amp; App Info" aria-label="Settings">
-                <i class="fas fa-cog"></i>
-            </button>
             <button type="button" onclick="openShareModal(this)" class="top-icon-btn" title="Share Digital Card" aria-label="Share">
                 <i class="fas fa-share-alt"></i>
             </button>
@@ -718,13 +715,10 @@
                 Event Feasts · Indore</div>
             <div style="font-size: 11px; color: #7a7065; margin-top: 8px;">© 2026 GM Service Caterers. All Rights
                 Reserved.</div>
-            <div class="creator-credits" style="font-size: 11.5px; color: #ded5c8; margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(212, 175, 55, 0.25);">
-                Designed &amp; Developed with excellence by <a href="https://www.innobrainitservices.com/" target="_blank" rel="noopener noreferrer" style="color: #f5d77f; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">Innobrain IT Services</a>
-            </div>
-            <div style="margin-top: 8px;">
-                <button type="button" onclick="openSettingsModal()" class="footer-settings-btn" style="background: rgba(212, 175, 55, 0.12); border: 1px solid rgba(212, 175, 55, 0.35); color: #f5d77f; font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 20px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease;">
-                    <i class="fas fa-cog"></i> Settings &amp; Project Info
-                </button>
+            <div class="creator-credits" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(212, 175, 55, 0.25);">
+                <a href="https://www.innobrainitservices.com/" target="_blank" rel="noopener noreferrer" class="footer-creator-btn" title="Visit Innobrain IT Services">
+                    <i class="fas fa-code"></i> Designed &amp; Developed by Innobrain IT Services <i class="fas fa-external-link-alt" style="font-size: 9px; opacity: 0.85;"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -779,62 +773,6 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- The Settings & Project Info Modal -->
-    <div id="settingsModal" class="modal settings-modal">
-        <div class="settings-modal-dialog">
-            <div class="settings-modal-header">
-                <div style="display: flex; align-items: center; gap: 8px;">
-                    <i class="fas fa-cog" style="color: #f5d77f; font-size: 16px;"></i>
-                    <h3 class="settings-modal-title" style="margin: 0; font-size: 17px; color: #f5d77f; font-weight: 700;">Settings &amp; Info</h3>
-                </div>
-                <span class="close" id="settingsModalClose">&times;</span>
-            </div>
-            
-            <div class="settings-modal-body">
-                <!-- Creator & Engineering Section -->
-                <div class="settings-card">
-                    <div class="settings-card-label"><i class="fas fa-code" style="color: #f5d77f; margin-right: 6px;"></i> PROJECT CREATOR &amp; DEVELOPER</div>
-                    <div style="margin-top: 6px; font-size: 15px; font-weight: 700; color: #ffffff;">Innobrain IT Services</div>
-                    <p style="font-size: 12px; color: #ded5c8; margin: 6px 0 10px; line-height: 1.45;">
-                        This digital catering platform was architected, designed, and developed by <strong>Innobrain IT Services</strong> — delivering premium digital solutions, responsive web engineering, and enterprise digital experiences.
-                    </p>
-                    <a href="https://www.innobrainitservices.com/" target="_blank" rel="noopener noreferrer" class="settings-creator-btn">
-                        <i class="fas fa-external-link-alt"></i> Visit Innobrain IT Services
-                    </a>
-                </div>
-
-                <!-- Project & Business Settings -->
-                <div class="settings-card" style="margin-top: 14px;">
-                    <div class="settings-card-label"><i class="fas fa-info-circle" style="color: #f5d77f; margin-right: 6px;"></i> APPLICATION SETTINGS</div>
-                    <div class="settings-info-row">
-                        <span>Platform:</span>
-                        <span style="color: #f5d77f; font-weight: 600;">GM Service Caterers Web App</span>
-                    </div>
-                    <div class="settings-info-row">
-                        <span>Theme:</span>
-                        <span style="color: #f5d77f; font-weight: 600;">Royal Onyx Black &amp; 24K Gold</span>
-                    </div>
-                    <div class="settings-info-row">
-                        <span>Cuisine &amp; Services:</span>
-                        <span style="color: #ded5c8;">100% Pure Veg, Jain &amp; Royal Crockery</span>
-                    </div>
-                    <div class="settings-info-row">
-                        <span>Location:</span>
-                        <span style="color: #ded5c8;">Near Nariman City, Chhota Bangarda, Indore (452005)</span>
-                    </div>
-                    <div class="settings-info-row">
-                        <span>Version:</span>
-                        <span style="color: #a89f91;">v2.4.0 (Production Release)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="settings-modal-footer">
-                <button type="button" class="buttonstyle" onclick="closeSettingsModal()" style="padding: 9px 24px; font-size: 13px; font-weight: 700; width: 100%;">Close</button>
             </div>
         </div>
     </div>
