@@ -1,6 +1,6 @@
 /**
  * GM Service Caterers — Production JavaScript Suite
- * Luxury Pure Vegetarian Catering & Royal Banquets (Indore)
+ * Luxury Pure Vegetarian Catering & Royal Crockery Services (Indore)
  * Modular Architecture: Theme | Modals | Sharing | Enquiry | Animations | Navigation
  */
 
@@ -205,13 +205,13 @@ function initAnimationsAndNavigation() {
                 if (!startTime) startTime = currentTime;
                 const elapsed = currentTime - startTime;
                 if (elapsed >= duration) {
-                    el.textContent = target + suffix;
+                    el.textContent = target.toLocaleString('en-IN') + suffix;
                     return;
                 }
                 const progress = elapsed / duration;
                 const easeProgress = 1 - Math.pow(1 - progress, 3);
                 const currentVal = Math.floor(easeProgress * target);
-                el.textContent = currentVal + suffix;
+                el.textContent = currentVal.toLocaleString('en-IN') + suffix;
                 requestAnimationFrame(step);
             };
             requestAnimationFrame(step);
@@ -230,7 +230,8 @@ function initAnimationsAndNavigation() {
             statCards.forEach(stat => statsObserver.observe(stat));
         } else {
             statCards.forEach(stat => {
-                stat.textContent = stat.getAttribute('data-target') + (stat.getAttribute('data-suffix') || '');
+                const targetVal = parseInt(stat.getAttribute('data-target'), 10);
+                stat.textContent = (isNaN(targetVal) ? stat.getAttribute('data-target') : targetVal.toLocaleString('en-IN')) + (stat.getAttribute('data-suffix') || '');
             });
         }
     }

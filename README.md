@@ -1,6 +1,6 @@
-# 🍽️ GM Service Caterers — Luxury Catering & Royal Banquets
+# 🍽️ GM Service Caterers — Luxury Catering & Royal Crockery Services
 
-> **Award-Winning Luxury Pure Vegetarian Catering & Royal Event Feasts**  
+> **Award-Winning Luxury Pure Vegetarian Catering & Royal Crockery Services**  
 > *Indore, Madhya Pradesh, India*
 
 [![Website Status](https://img.shields.io/badge/Status-Live%20on%20GitHub%20Pages-2ea44f?style=for-the-badge&logo=github)](https://satyamranatc.github.io/GM-Cuisine-Factory/)
@@ -26,8 +26,9 @@
   - Live Indori Sarafa Chaat Lounge (5 Mineral Flavored Pani Puri, Royal Raj Kachori)
   - Live Artisanal Pasta & Indo-Chinese Wok Stations
   - 100% Pure Veg & Dedicated Jain Sanctity Catering (Zero Root Veg, Dedicated Cookware)
-  - Flexible Event Scale: 25 to 50 guests (Birthdays & Kitty Parties) up to 1,000+ guests (Mega Wedding Banquets)
-- **Interactive Service Filter**: Dynamic gold chips enabling instantaneous client filtering across weddings, regional cuisines, live counters, and intimate celebrations.
+  - Royal Crockery & Designer Tableware Rental: 24K Gold & Silver-Plated Thalis, Fine Bone China, Brass Chafing setups starting from ₹10,000
+  - Flexible Event Scale: 25 to 50 guests (Birthdays & Kitty Parties) up to 10,000+ guests (Mega Weddings & Grand Galas)
+- **Interactive Service Filter**: Dynamic gold chips enabling instantaneous client filtering across weddings, royal crockery, regional cuisines, live counters, and intimate celebrations.
 - **Interactive Navigation & Scroll-Spy**: Sticky mobile navigation dock with dynamic gold active-tab tracking and underline indicator.
 - **One-Tap Actions**:
   - Save to Contacts (`.vcf` card download)
@@ -109,8 +110,8 @@ This project is tailored specifically for **GitHub Pages**:
 ## 📞 Contact & Reservation
 
 - **Brand**: GM Service Caterers
-- **Cuisine**: 100% Luxury Pure Vegetarian
-- **Location**: Akhand Nagar, 8, Airport road, Indore, Madhya Pradesh 452006
+- **Cuisine & Services**: 100% Luxury Pure Vegetarian & Royal Crockery
+- **Location**: Near Nariman City, Chhota Bangarda, Indore, Madhya Pradesh – 452005
 - **Phone**: +91 81090 01111 / +91 93401 54446
 - **Instagram**: [@gm_service_caterers](https://www.instagram.com/gm_service_caterers?stkn=MWhucHdoaXFhMjJpdA%3D%3D&utm_source=qr)
 - **WhatsApp**: [+91 81090 01111](https://wa.me/918109001111)
