@@ -24,22 +24,21 @@ function ColorLuminance(hex, lum) {
 
 function initThemeVariables() {
     var themeElem = document.getElementById('themeColor');
-    var themecolor = themeElem ? themeElem.value : '#141210';
+    var themecolor = themeElem ? themeElem.value : '#0a0908';
     var themeElem1 = document.getElementById('themeColor1');
-    var themeColor1 = themeElem1 ? themeElem1.value : '#fdfaf3';
+    var themeColor1 = themeElem1 ? themeElem1.value : '#161412';
     document.documentElement.style.setProperty('--theme-color', themecolor);
     document.documentElement.style.setProperty('--theme-color-light', themeColor1);
-    document.documentElement.style.setProperty('--theme-color-gold', '#cba46b');
-    document.documentElement.style.setProperty('--theme-color-gold-light', '#dfba73');
-    document.documentElement.style.setProperty('--theme-color-bronze', '#8e6328');
-    document.documentElement.style.setProperty('--theme-color-emerald', '#1e3f20');
-    document.documentElement.style.setProperty('--theme-color-emerald-light', '#2e7d32');
-    document.documentElement.style.setProperty('--theme-color-emerald-mint', '#27ae60');
-    document.documentElement.style.setProperty('--theme-color-emerald-soft', 'rgba(30, 63, 32, 0.08)');
-    document.documentElement.style.setProperty('--theme-color-emerald-border', 'rgba(46, 125, 50, 0.32)');
-    document.documentElement.style.setProperty('--theme-color-dark1', '#1a1714');
-    document.documentElement.style.setProperty('--theme-color-dark2', '#221e1a');
-    document.documentElement.style.setProperty('--theme-color-dark3', '#2a2520');
+    document.documentElement.style.setProperty('--theme-color-gold', '#d4af37');
+    document.documentElement.style.setProperty('--theme-color-gold-light', '#f5d77f');
+    document.documentElement.style.setProperty('--theme-color-gold-bright', '#ffe082');
+    document.documentElement.style.setProperty('--theme-color-gold-pale', '#fbf7ee');
+    document.documentElement.style.setProperty('--theme-color-bronze', '#aa771c');
+    document.documentElement.style.setProperty('--theme-color-emerald', '#27ae60');
+    document.documentElement.style.setProperty('--theme-color-emerald-light', '#2ecc71');
+    document.documentElement.style.setProperty('--theme-color-dark1', '#0a0908');
+    document.documentElement.style.setProperty('--theme-color-dark2', '#12100e');
+    document.documentElement.style.setProperty('--theme-color-dark3', '#1a1714');
 }
 
 // ==========================================
@@ -51,6 +50,8 @@ const modalImg = document.getElementById('img01');
 const captionText = document.getElementById('caption');
 const imageModalClose = document.getElementById('imageModalClose');
 const shareModalClose = document.getElementById('shareModalClose');
+const settingsModal = document.getElementById('settingsModal');
+const settingsModalClose = document.getElementById('settingsModalClose');
 
 window.addEventListener('click', function (event) {
     if (event.target === imageModal && imageModal) {
@@ -58,6 +59,9 @@ window.addEventListener('click', function (event) {
     }
     if (event.target === shareModal && shareModal) {
         shareModal.style.display = 'none';
+    }
+    if (event.target === settingsModal && settingsModal) {
+        settingsModal.style.display = 'none';
     }
 });
 
@@ -94,6 +98,24 @@ if (shareModalClose) {
     shareModalClose.onclick = function () {
         if (shareModal) shareModal.style.display = 'none';
     };
+}
+
+function openSettingsModal() {
+    const modal = document.getElementById('settingsModal');
+    if (modal) {
+        modal.style.display = 'flex';
+    }
+}
+
+function closeSettingsModal() {
+    const modal = document.getElementById('settingsModal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+if (settingsModalClose) {
+    settingsModalClose.onclick = closeSettingsModal;
 }
 
 // ==========================================

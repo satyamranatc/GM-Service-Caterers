@@ -110,13 +110,15 @@ This project is tailored specifically for **GitHub Pages**:
 
 - **Brand**: GM Service Caterers
 - **Cuisine**: 100% Luxury Pure Vegetarian
-- **Location**: 8, Akhand Nagar, Airport Road, Indore, MP - 452005
+- **Location**: Akhand Nagar, 8, Airport road, Indore, Madhya Pradesh 452006
 - **Phone**: +91 81090 01111 / +91 93401 54446
 - **Instagram**: [@gm_service_caterers](https://www.instagram.com/gm_service_caterers?stkn=MWhucHdoaXFhMjJpdA%3D%3D&utm_source=qr)
 - **WhatsApp**: [+91 81090 01111](https://wa.me/918109001111)
 
 ---
 
-## 📄 License
+## 📄 License & Credits
 
-© 2026 **GM Service Caterers**. All Rights Reserved.
+- **Project Creator & Developer**: [Innobrain IT Services](https://www.innobrainitservices.com/) — Enterprise Web Architecture, Cloud Solutions & Digital Experience Design.
+- **Client**: GM Service Caterers
+- **Copyright**: © 2026 **GM Service Caterers**. All Rights Reserved.
