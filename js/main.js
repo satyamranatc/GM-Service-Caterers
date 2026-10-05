@@ -24,9 +24,9 @@ function ColorLuminance(hex, lum) {
 
 function initThemeVariables() {
     var themeElem = document.getElementById('themeColor');
-    var themecolor = themeElem ? themeElem.value : '#0a0908';
+    var themecolor = themeElem ? themeElem.value : '#000000';
     var themeElem1 = document.getElementById('themeColor1');
-    var themeColor1 = themeElem1 ? themeElem1.value : '#161412';
+    var themeColor1 = themeElem1 ? themeElem1.value : '#111216';
     document.documentElement.style.setProperty('--theme-color', themecolor);
     document.documentElement.style.setProperty('--theme-color-light', themeColor1);
     document.documentElement.style.setProperty('--theme-color-gold', '#d4af37');
@@ -36,9 +36,9 @@ function initThemeVariables() {
     document.documentElement.style.setProperty('--theme-color-bronze', '#aa771c');
     document.documentElement.style.setProperty('--theme-color-emerald', '#27ae60');
     document.documentElement.style.setProperty('--theme-color-emerald-light', '#2ecc71');
-    document.documentElement.style.setProperty('--theme-color-dark1', '#0a0908');
-    document.documentElement.style.setProperty('--theme-color-dark2', '#12100e');
-    document.documentElement.style.setProperty('--theme-color-dark3', '#1a1714');
+    document.documentElement.style.setProperty('--theme-color-dark1', '#000000');
+    document.documentElement.style.setProperty('--theme-color-dark2', '#090a0d');
+    document.documentElement.style.setProperty('--theme-color-dark3', '#111216');
 }
 
 // ==========================================
