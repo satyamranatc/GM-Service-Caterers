@@ -326,10 +326,79 @@ function filterServices(category, element) {
 }
 
 // ==========================================
+// 7. Video Showcase Playback Controller
+// ==========================================
+function toggleVideoPlay(btn, videoId) {
+    const video = document.getElementById(videoId);
+    if (!video) return;
+    const icon = btn.querySelector('i');
+    if (video.paused) {
+        video.play().catch(function() {});
+        if (icon) {
+            icon.classList.remove('fa-play');
+            icon.classList.add('fa-pause');
+        }
+    } else {
+        video.pause();
+        if (icon) {
+            icon.classList.remove('fa-pause');
+            icon.classList.add('fa-play');
+        }
+    }
+}
+
+function toggleVideoMute(btn, videoId) {
+    const video = document.getElementById(videoId);
+    if (!video) return;
+    const icon = btn.querySelector('i');
+    video.muted = !video.muted;
+    if (video.muted) {
+        if (icon) {
+            icon.classList.remove('fa-volume-up');
+            icon.classList.add('fa-volume-off');
+        }
+    } else {
+        if (icon) {
+            icon.classList.remove('fa-volume-off');
+            icon.classList.add('fa-volume-up');
+        }
+    }
+}
+
+function toggleVideoFullscreen(videoId) {
+    const video = document.getElementById(videoId);
+    if (!video) return;
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+    }
+}
+
+function initVideoPlayers() {
+    const videos = document.querySelectorAll('.card-video-player');
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+                if (entry.isIntersecting) {
+                    video.play().catch(function() {});
+                } else {
+                    video.pause();
+                }
+            });
+        }, { threshold: 0.3 });
+
+        videos.forEach(v => videoObserver.observe(v));
+    }
+}
+
+// ==========================================
 // Initialization on DOM Ready
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
     initThemeVariables();
     initEnquiryForm();
     initAnimationsAndNavigation();
+    initVideoPlayers();
 });
