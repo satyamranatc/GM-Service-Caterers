@@ -49,31 +49,73 @@ const shareModal = document.getElementById('shareModal');
 const modalImg = document.getElementById('img01');
 const captionText = document.getElementById('caption');
 const imageModalClose = document.getElementById('imageModalClose');
+const imageModalFullscreenBtn = document.getElementById('imageModalFullscreenBtn');
 const shareModalClose = document.getElementById('shareModalClose');
 
-window.addEventListener('click', function (event) {
-    if (event.target === imageModal && imageModal) {
+function closeImageModal() {
+    if (imageModal) {
         imageModal.style.display = 'none';
+        document.body.style.overflow = '';
+        if (document.fullscreenElement && document.exitFullscreen) {
+            document.exitFullscreen().catch(function() {});
+        }
     }
-    if (event.target === shareModal && shareModal) {
-        shareModal.style.display = 'none';
-    }
-});
+}
 
 function openImageModal(e) {
     if (!imageModal || !modalImg) return;
-    imageModal.style.display = 'block';
     modalImg.src = e.src;
     if (captionText) {
         captionText.innerHTML = e.alt || '';
     }
+    imageModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function toggleImageModalFullscreen() {
+    if (!imageModal) return;
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+        if (document.exitFullscreen) {
+            document.exitFullscreen().catch(function() {});
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        }
+    } else {
+        if (imageModal.requestFullscreen) {
+            imageModal.requestFullscreen().catch(function() {});
+        } else if (imageModal.webkitRequestFullscreen) {
+            imageModal.webkitRequestFullscreen();
+        }
+    }
 }
 
 if (imageModalClose) {
-    imageModalClose.onclick = function () {
-        if (imageModal) imageModal.style.display = 'none';
-    };
+    imageModalClose.onclick = closeImageModal;
 }
+
+if (imageModalFullscreenBtn) {
+    imageModalFullscreenBtn.onclick = toggleImageModalFullscreen;
+}
+
+window.addEventListener('click', function (event) {
+    if (event.target === imageModal || event.target.classList.contains('modal-image-wrapper')) {
+        closeImageModal();
+    }
+    if (event.target === shareModal && shareModal) {
+        shareModal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+});
+
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeImageModal();
+        if (shareModal) {
+            shareModal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+    }
+});
 
 function openShareModal(e, title) {
     title = title || 'GM Service Caterers | Luxury Catering';
@@ -283,7 +325,7 @@ function initAnimationsAndNavigation() {
 }
 
 // ==========================================
-// 6. Interactive Signature Services & Menus Filter
+// 6. Interactive Crockery & Dining Services Filter
 // ==========================================
 function filterServices(category, element) {
     const chips = document.querySelectorAll('.service-filter-chip');
@@ -345,10 +387,28 @@ function toggleVideoMute(btn, videoId) {
 function toggleVideoFullscreen(videoId) {
     const video = document.getElementById(videoId);
     if (!video) return;
+
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+        if (document.exitFullscreen) {
+            document.exitFullscreen().catch(function() {});
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        }
+        return;
+    }
+
     if (video.requestFullscreen) {
-        video.requestFullscreen();
+        video.requestFullscreen().catch(function() {
+            if (video.webkitEnterFullscreen) {
+                video.webkitEnterFullscreen();
+            }
+        });
     } else if (video.webkitRequestFullscreen) {
         video.webkitRequestFullscreen();
+    } else if (video.webkitEnterFullscreen) {
+        video.webkitEnterFullscreen();
+    } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
     }
 }
 

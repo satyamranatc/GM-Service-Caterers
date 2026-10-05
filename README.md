@@ -26,7 +26,7 @@
   - Live Indori Sarafa Chaat Lounge (5 Mineral Flavored Pani Puri, Royal Raj Kachori)
   - Live Artisanal Pasta & Indo-Chinese Wok Stations
   - 100% Pure Veg & Dedicated Jain Sanctity Catering (Zero Root Veg, Dedicated Cookware)
-  - Royal Crockery & Designer Tableware Rental: 24K Gold & Silver-Plated Thalis, Fine Bone China, Brass Chafing setups starting from ₹10,000
+  - Royal Crockery &amp; Designer Tableware Rental: 24K Gold, Imperial Silver &amp; Rustic Wooden Theme setups, Fine Bone China, Brass &amp; Copper Chafing from ₹10,000
   - Flexible Event Scale: 25 to 50 guests (Birthdays & Kitty Parties) up to 10,000+ guests (Mega Weddings & Grand Galas)
 - **Interactive Service Filter**: Dynamic gold chips enabling instantaneous client filtering across weddings, royal crockery, regional cuisines, live counters, and intimate celebrations.
 - **Interactive Navigation & Scroll-Spy**: Sticky mobile navigation dock with dynamic gold active-tab tracking and underline indicator.

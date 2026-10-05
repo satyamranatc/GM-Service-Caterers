@@ -159,7 +159,7 @@
                 <div class="hero-tagline-container" style="margin-top: 8px;">
                     <span id="llbDesignation" class="hero-designation-badge">
                         <i class="fas fa-crown" style="color: #ffd700; font-size: 11px;"></i>
-                        <b>Royal Crockery &amp; Gourmet Catering Services · Indore</b>
+                        <b>Royal Crockery &amp; Catering Services · Indore</b>
                     </span>
                 </div>
             </div>
@@ -396,7 +396,7 @@
     </div>
     <div id="ProductsServicesSection" class="section-container scroll-reveal">
         <div class="corner"></div>
-        <h2 class="section-header">Our Signature Services &amp; Menus</h2>
+        <h2 class="section-header">Crockery &amp; Dining Services</h2>
         <div id="div3"
             style="width:25%;height:2px;margin:0 auto 20px;background:linear-gradient(90deg, transparent 0%, #8a6314 15%, #f5d77f 50%, #d4af37 70%, #8a6314 85%, transparent 100%);">
         </div>
@@ -422,7 +422,7 @@
                 <div class="service-overview-item">
                     <i class="fas fa-gem" style="color: #d4af37;"></i>
                     <span class="service-overview-item-title">Royal Crockery</span>
-                    <span class="service-overview-item-desc">Gold &amp; Silver Thalis, Chafing &amp; Tableware from ₹10,000</span>
+                    <span class="service-overview-item-desc">Gold, Silver &amp; Wooden Themes, Chafing &amp; Tableware from ₹10,000</span>
                 </div>
             </div>
         </div>
@@ -529,6 +529,37 @@
                 </div>
                 <div class='product-enquiry-section'>
                     <a href="https://wa.me/918109001111?text=Hello%20GM%20Service%20Caterers%2C%20I%20want%20to%20enquire%20about%20Silver%20Theme%20Royal%20Crockery%20and%20Buffet%20Services."
+                        target='_blank' class='product-enquiry-btn' style="width: 100%; text-align: center;"><i class="fab fa-whatsapp"
+                            style="color: #25D366; font-size: 15px;"></i> Enquiry on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 4. Royal Crockery — Vintage Wooden Theme Rustic Buffet & Tableware Setup (500 to 10,000+ Guests) -->
+            <div class='card scroll-reveal' data-categories='crockery weddings'>
+                <h3 class='card-title'>Royal Crockery — Vintage Wooden Theme Rustic Buffet &amp; Tableware Setup (500 to 10,000+ Guests)</h3>
+                <div class='card-img-container'>
+                    <span class='img-glass-badge'><i class="fas fa-tree" style="color:#d4af37;"></i> Wooden Theme</span>
+                    <img loading="lazy" decoding="async" onclick='openImageModal(this)' alt='Royal Crockery Vintage Wooden Theme Rustic Buffet Setup - GM Service Caterers'
+                        src="images/wooden_theme_buffet.jpg">
+                    <div class='img-overlay-caption'>
+                        <span class='caption-text'>Handcrafted Teak &amp; Rustic Wood Chafing Setup · Wooden Theme</span>
+                        <span class='zoom-hint'><i class="fas fa-search-plus"></i> View</span>
+                    </div>
+                </div>
+                <div class="service-meta-tags">
+                    <span class="service-meta-tag"><i class="fas fa-users"></i> 500 - 10,000+ Guests</span>
+                    <span class="service-meta-tag" style="background: rgba(212, 175, 55, 0.2); border-color: rgba(212, 175, 55, 0.55); color: #f5d77f;"><i class="fas fa-tag"></i> Packages from ₹10,000</span>
+                    <span class="service-meta-tag"><i class="fas fa-tree"></i> Handcrafted Timber Chafing</span>
+                    <span class="service-meta-tag"><i class="fas fa-leaf"></i> Rustic Earthy Aesthetics</span>
+                </div>
+                <div class='product-description'>
+                    <p>Immerse your celebrations in organic royal warmth with GM Caterers' signature Vintage Wooden Theme buffet setup. Crafted with solid polished teak wood risers, natural timber food counters, brass &amp; hammered copper chafing dishes, tree-slab display platters, and warm ambient Edison illumination for destination weddings and open-air lawn galas.</p>
+                </div>
+                <div class="service-menu-highlights">
+                    <strong>Wooden Theme Crockery Highlights:</strong> Hand-Carved Teakwood Chafing Risers, Solid Timber Counter Elevations, Tree-Bark &amp; Natural Slab Platters, Brass &amp; Copper Warmers, Stoneware &amp; Earthy Thalis, Edison &amp; Fairy Light Canopy, Turnkey Setup across Indore.
+                </div>
+                <div class='product-enquiry-section'>
+                    <a href="https://wa.me/918109001111?text=Hello%20GM%20Service%20Caterers%2C%20I%20want%20to%20enquire%20about%20Wooden%20Theme%20Royal%20Crockery%20and%20Buffet%20Services."
                         target='_blank' class='product-enquiry-btn' style="width: 100%; text-align: center;"><i class="fab fa-whatsapp"
                             style="color: #25D366; font-size: 15px;"></i> Enquiry on WhatsApp</a>
                 </div>
@@ -723,11 +754,20 @@
         </div>
     </div>
 
-    <!-- The image Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close" id="imageModalClose">×</span>
-        <img loading="lazy" decoding="async" class="modal-content fadeIn" id="img01">
-        <div id="caption"></div>
+    <!-- The image Modal (Enhanced Fullscreen Lightbox) -->
+    <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Image Fullscreen Viewer">
+        <div class="modal-controls-bar">
+            <button type="button" class="modal-icon-btn" id="imageModalFullscreenBtn" title="Toggle Fullscreen" aria-label="Toggle Fullscreen">
+                <i class="fas fa-expand"></i>
+            </button>
+            <button type="button" class="modal-icon-btn modal-close-btn" id="imageModalClose" title="Close Viewer" aria-label="Close Viewer">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-image-wrapper">
+            <img class="modal-content" id="img01" alt="Fullscreen Image Preview">
+        </div>
+        <div id="caption" class="modal-caption-badge"></div>
     </div>
     <!-- The share Modal -->
     <div id="shareModal" class="modal share-modal">
