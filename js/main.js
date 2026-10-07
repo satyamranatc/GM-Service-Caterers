@@ -286,7 +286,6 @@ function initAnimationsAndNavigation() {
         document.getElementById('homesection'),
         document.getElementById('AboutUsSection'),
         document.getElementById('ProductsServicesSection'),
-        document.getElementById('PaymentOptionsSection'),
         document.getElementById('feedbacksection'),
         document.getElementById('enquirysection')
     ].filter(Boolean);

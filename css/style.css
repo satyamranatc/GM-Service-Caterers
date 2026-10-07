@@ -1566,14 +1566,6 @@
             font-weight: 700;
         }
 
-        /* Payment CSS Start */
-        .qr-image {
-            max-width: 250px;
-            width: 100%;
-        }
-
-        /* Payment CSS Completed */
-
         /* Gallery CSS Starts */
         .images-container {
             column-count: 3;
