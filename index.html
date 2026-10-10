@@ -569,6 +569,89 @@
         <div class="corner-bottom"></div>
     </div>
 
+    <div id="PaymentOptionsSection" class="section-container scroll-reveal">
+        <div class="corner"></div>
+        <h2 class="section-header">Payment Options</h2>
+
+        <div id="div4"
+            style="width:25%;height:2px;margin:0 auto 20px;background:linear-gradient(90deg, transparent 0%, #8a6314 15%, #f5d77f 50%, #d4af37 70%, #8a6314 85%, transparent 100%);">
+        </div>
+
+        <table class="about-us-table" style="position: relative; z-index: 2; margin: 0 auto 15px auto; width: 100%; max-width: 500px;">
+            <tbody id="walletPay">
+                <tr>
+                    <td class='table-row-label'>
+                        <h3 class='table-row-label-text'>Beneficiary</h3>
+                        <b class='table-row-label-separator'>:</b>
+                    </td>
+                    <td style="width: 8px;"></td>
+                    <td class='table-row-value'>RAMESHCHAND KUMAWAT<br><span style="font-size: 12px; color: #bcaaa4;">(GM Service Caterers)</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class='table-row-label'>
+                        <h3 class='table-row-label-text'>UPI ID</h3>
+                        <b class='table-row-label-separator'>:</b>
+                    </td>
+                    <td></td>
+                    <td class='table-row-value'>
+                        <div style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                            <a href="upi://pay?pa=9425410558@axl&pn=RAMESHCHAND%20KUMAWAT&cu=INR"
+                                style="color:var(--theme-color-gold-light, #f5d77f); font-weight:600; text-decoration:none; font-size: 15px;">9425410558@axl</a>
+                            <button type="button" onclick="copyPaymentUPI(this)" class="copy-upi-btn" title="Copy UPI ID" aria-label="Copy UPI ID">
+                                <i class="fas fa-copy"></i> <span>Copy</span>
+                            </button>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class='table-row-label'>
+                        <h3 class='table-row-label-text'>UPI Number</h3>
+                        <b class='table-row-label-separator'>:</b>
+                    </td>
+                    <td></td>
+                    <td class='table-row-value'>
+                        <a href="tel:9425410558" style="color:var(--theme-color-gold-light, #f5d77f); font-weight:600; text-decoration:none;">9425410558</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class='table-row-label'>
+                        <h3 class='table-row-label-text'>Payment Modes</h3>
+                        <b class='table-row-label-separator'>:</b>
+                    </td>
+                    <td></td>
+                    <td class='table-row-value'>PhonePe, Google Pay, Paytm, BHIM UPI</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Direct Instant Pay Action Button -->
+        <div style="position: relative; z-index: 2; text-align: center; margin: 15px auto 20px; max-width: 300px;">
+            <a href="upi://pay?pa=9425410558@axl&pn=RAMESHCHAND%20KUMAWAT&cu=INR" class="buttonstyle" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; text-decoration: none; font-size: 14px; padding: 12px 18px; border-radius: 8px;">
+                <i class="fas fa-mobile-alt" style="color: #f5d77f;"></i> Pay via Any UPI App
+            </a>
+        </div>
+
+        <h3 id="h3Qr" style="position: relative; z-index: 2; text-align: center; font-size: 14.5px; color: #f5d77f; margin: 15px 0 12px; letter-spacing: 0.4px;">
+            <i class="fas fa-qrcode" style="margin-right: 6px;"></i> Scan &amp; Pay via PhonePe / UPI
+        </h3>
+
+        <div id="QRGroup" style="position: relative; z-index: 2; margin-bottom: 12px; text-align: center;">
+            <div class="qr-card-container">
+                <img loading="lazy" decoding="async" onclick='openImageModal(this)'
+                    alt='PhonePe Official UPI QR (9425410558@axl) - RAMESHCHAND KUMAWAT (GM Service Caterers)'
+                    src='images/phonepe_payment_qr.png'
+                    class='qr-image'
+                    title="Click to view full screen">
+                <div class="qr-zoom-hint"><i class="fas fa-search-plus"></i> Tap QR to expand fullscreen</div>
+            </div>
+        </div>
+        <div class="corner-bottom"></div>
+    </div>
+
     <div id="feedbacksection" class="section-container scroll-reveal">
         <div class="corner"></div>
         <h2 class="section-header">Rate Us</h2>
@@ -776,6 +859,12 @@
                 <a href="#ProductsServicesSection" id="ProductUrl" class="footer-menu-link">
                     <i class="footer-menu-icon fas fa-box-open"></i>
                     <div class="footer-menu-text">SERVICES</div>
+                </a>
+            </li>
+            <li>
+                <a href="#PaymentOptionsSection" id="PaymentUrl" class="footer-menu-link">
+                    <i class="footer-menu-icon fas fa-money-bill-alt"></i>
+                    <div class="footer-menu-text">PAYMENT</div>
                 </a>
             </li>
             <li>

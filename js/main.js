@@ -286,6 +286,7 @@ function initAnimationsAndNavigation() {
         document.getElementById('homesection'),
         document.getElementById('AboutUsSection'),
         document.getElementById('ProductsServicesSection'),
+        document.getElementById('PaymentOptionsSection'),
         document.getElementById('feedbacksection'),
         document.getElementById('enquirysection')
     ].filter(Boolean);
@@ -426,6 +427,24 @@ function initVideoPlayers() {
         }, { threshold: 0.3 });
 
         videos.forEach(v => videoObserver.observe(v));
+    }
+}
+
+function copyPaymentUPI(btn) {
+    const upiText = '9425410558@axl';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(upiText).then(() => {
+            if (!btn) return;
+            const originalHtml = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check" style="color:#4ade80;"></i> <span style="color:#4ade80;">Copied!</span>';
+            setTimeout(() => {
+                btn.innerHTML = originalHtml;
+            }, 2000);
+        }).catch(() => {
+            prompt('Copy UPI ID:', upiText);
+        });
+    } else {
+        prompt('Copy UPI ID:', upiText);
     }
 }
 
